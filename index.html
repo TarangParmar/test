@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    /* ── Navbar ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #1a1a2e;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover {
+      color: #e94560;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: #e94560;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #e94560;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #c73652;
+      transform: translateY(-2px);
+    }
+
+    /* ── Features ── */
+    .features {
+      padding: 5rem 2rem;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .features .subtitle {
+      color: #777;
+      margin-bottom: 3rem;
+    }
+
+    .cards {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      width: 260px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      color: #777;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #1a1a2e;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #e94560;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MyDemo</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Welcome to <span>MyDemo</span></h1>
+    <p>A clean, simple starter website built with pure HTML & CSS. No frameworks, no fuss.</p>
+    <a href="#features" class="btn">Explore Features</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>What We Offer</h2>
+    <p class="subtitle">Simple, fast, and beautiful — right out of the box.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Fast & Lightweight</h3>
+        <p>No dependencies. Pure HTML and CSS means instant load times on any device.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Clean Design</h3>
+        <p>A modern, minimal aesthetic that looks great on desktop and mobile alike.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Easy to Customize</h3>
+        <p>Simple structure makes it easy to extend and build upon for any project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Built by <a href="https://github.com/TarangParmar" target="_blank">TarangParmar</a> &mdash; hosted on GitHub Pages.</p>
+    <p style="margin-top:0.5rem;">&copy; 2026 MyDemo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
